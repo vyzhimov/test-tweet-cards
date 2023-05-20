@@ -1,0 +1,44 @@
+{
+  "hash": "b597f3ba",
+  "browserHash": "ad971153",
+  "optimized": {
+    "react": {
+      "src": "../../node_modules/react/index.js",
+      "file": "react.js",
+      "fileHash": "5bedf107",
+      "needsInterop": true
+    },
+    "react-dom/client": {
+      "src": "../../node_modules/react-dom/client.js",
+      "file": "react-dom_client.js",
+      "fileHash": "e714dfdb",
+      "needsInterop": true
+    },
+    "react-router-dom": {
+      "src": "../../node_modules/react-router-dom/dist/index.js",
+      "file": "react-router-dom.js",
+      "fileHash": "135c2327",
+      "needsInterop": false
+    },
+    "@emotion/styled": {
+      "src": "../../node_modules/@emotion/styled/dist/emotion-styled.browser.esm.js",
+      "file": "@emotion_styled.js",
+      "fileHash": "99e6f98a",
+      "needsInterop": false
+    },
+    "react-loader-spinner": {
+      "src": "../../node_modules/react-loader-spinner/dist/esm/index.js",
+      "file": "react-loader-spinner.js",
+      "fileHash": "e114b14c",
+      "needsInterop": false
+    }
+  },
+  "chunks": {
+    "chunk-XNK5DJ2O": {
+      "file": "chunk-XNK5DJ2O.js"
+    },
+    "chunk-QSQYAWSL": {
+      "file": "chunk-QSQYAWSL.js"
+    }
+  }
+}
