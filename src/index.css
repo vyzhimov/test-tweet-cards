@@ -38,4 +38,10 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #e4cffa;
+}
+
+.blocks-wrapper {
+  display: block;
+  margin: 0 auto;
 }

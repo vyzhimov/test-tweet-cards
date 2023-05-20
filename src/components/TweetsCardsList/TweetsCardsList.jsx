@@ -1,10 +1,15 @@
 import { useEffect, useState } from "react";
+
 import { animateScroll as scroll } from "react-scroll";
-import { fetchUsersData } from "../../services/getUsersApi";
+import { fetchUsersData } from "../../services/usersApi";
 import IsLoading from "../IsLoading/IsLoading";
 import TweetCard from "../TweetCard/TweerCard";
 
-import { TweetCardList, LoadMoreBtn } from "./TweetsCardsList.styled";
+import {
+  TweetCardList,
+  LoadMoreBtn,
+  BackToHome,
+} from "./TweetsCardsList.styled";
 
 const TweetsCardsList = () => {
   const [usersList, setUsersList] = useState([]);
@@ -37,6 +42,9 @@ const TweetsCardsList = () => {
 
   return (
     <>
+      <div>
+        <BackToHome to={"/"}>Back</BackToHome>
+      </div>
       <TweetCardList>
         {usersList.map((user) => {
           return (

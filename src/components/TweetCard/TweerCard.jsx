@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { updateUserData } from "../../services/getUsersApi";
+import { updateUserData } from "../../services/usersApi";
 
 import Logo from "./logo.png";
 import main from "./main.png";
