@@ -1,4 +1,4 @@
-import{n as e,j as s}from"./index-483d8ad9.js";const r=""+new URL("goitlogo-ee9d84e1.png",import.meta.url).href,o=""+new URL("movies-a4aeb14f.jpg",import.meta.url).href,a=""+new URL("nyt-242f343d.jpg",import.meta.url).href,i=""+new URL("shopgamers-ba2109f0.jpg",import.meta.url).href,n=e.img`
+import{n as e,j as s}from"./index-185fde51.js";const r=""+new URL("goitlogo-ee9d84e1.png",import.meta.url).href,o=""+new URL("movies-a4aeb14f.jpg",import.meta.url).href,a=""+new URL("nyt-242f343d.jpg",import.meta.url).href,i=""+new URL("shopgamers-ba2109f0.jpg",import.meta.url).href,n=e.img`
   display: block;
   margin: 0 auto;
   width: 900px;
@@ -55,4 +55,4 @@ import{n as e,j as s}from"./index-483d8ad9.js";const r=""+new URL("goitlogo-ee9d
     padding: 10px;
     border-bottom-left-radius: 5px;
   }
-`,l=()=>s.jsxs("div",{children:[s.jsx(n,{src:r,alt:"GoIT"}),s.jsx(p,{children:"MY WORKS"}),s.jsxs(m,{children:[s.jsx(t,{children:s.jsxs("a",{href:"https://vyzhimov.github.io/goit-react-hw-05-movies",target:"_blank",children:[s.jsx("p",{children:"MOVIES"}),s.jsx("img",{src:o,alt:"movies"})]})}),s.jsx(t,{children:s.jsxs("a",{href:"https://olgamunaieva.github.io/news-project-9/",target:"_blank",children:[s.jsx("p",{children:"NEWS PORTAL"}),s.jsx("img",{src:a,alt:"movies"})]})}),s.jsx(t,{children:s.jsxs("a",{href:"https://vyzhimov.github.io/project11-shopforgamers/",target:"_blank",children:[s.jsx("p",{children:"SHOP FOR GAMERS"}),s.jsx("img",{src:i,alt:"movies"})]})})]})]}),h=l;export{h as default};
+`,l=()=>s.jsxs("div",{children:[s.jsx(n,{src:r,alt:"GoIT"}),s.jsx(p,{children:"MY PROJECTS"}),s.jsxs(m,{children:[s.jsx(t,{children:s.jsxs("a",{href:"https://vyzhimov.github.io/goit-react-hw-05-movies",target:"_blank",children:[s.jsx("p",{children:"MOVIES"}),s.jsx("img",{src:o,alt:"movies"})]})}),s.jsx(t,{children:s.jsxs("a",{href:"https://olgamunaieva.github.io/news-project-9/",target:"_blank",children:[s.jsx("p",{children:"NEWS PORTAL"}),s.jsx("img",{src:a,alt:"movies"})]})}),s.jsx(t,{children:s.jsxs("a",{href:"https://vyzhimov.github.io/project11-shopforgamers/",target:"_blank",children:[s.jsx("p",{children:"SHOP FOR GAMERS"}),s.jsx("img",{src:i,alt:"movies"})]})})]})]}),h=l;export{h as default};
