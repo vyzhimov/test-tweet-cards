@@ -9,7 +9,7 @@ const Home = () => {
   return (
     <div>
       <GoIT src={GoItImg} alt="GoIT" />
-      <Title>MY WORKS</Title>
+      <Title>MY PROJECTS</Title>
       <WorkList>
         <WorksListItem>
           <a

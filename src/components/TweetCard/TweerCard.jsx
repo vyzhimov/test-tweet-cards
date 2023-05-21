@@ -1,4 +1,5 @@
-import { useEffect, useState } from "react";
+import PropTypes from "prop-types";
+import { useState } from "react";
 import { updateUserData } from "../../services/usersApi";
 
 import Logo from "./logo.png";
@@ -53,3 +54,14 @@ const TweetCard = ({ userInfo }) => {
 };
 
 export default TweetCard;
+
+TweetCard.propTypes = {
+  userInfo: PropTypes.shape({
+    id: PropTypes.string,
+    user: PropTypes.string,
+    tweets: PropTypes.number,
+    avatar: PropTypes.string,
+    followers: PropTypes.number,
+    following: PropTypes.bool,
+  }),
+};

@@ -1,11 +1,13 @@
 import { useEffect, useState } from "react";
-
 import { animateScroll as scroll } from "react-scroll";
+
 import { fetchUsersData } from "../../services/usersApi";
 import IsLoading from "../IsLoading/IsLoading";
 import TweetCard from "../TweetCard/TweerCard";
+import FormFilter from "../Form";
 
 import {
+  FilterWrapper,
   TweetCardList,
   LoadMoreBtn,
   BackToHome,
@@ -17,12 +19,15 @@ const TweetsCardsList = () => {
   const [error, setError] = useState(false);
   const [page, setPage] = useState(1);
   const [showLoadMore, setShowLoadMore] = useState(false);
+  const [filter, setFilter] = useState("all");
+  const [filteredCards, setFilteredCards] = useState([]);
 
   async function getUsers() {
     try {
       setIsLoading(true);
       const users = await fetchUsersData(page).then((r) => r.data);
       setUsersList([...usersList, ...users]);
+      setFilteredCards([...filteredCards, ...users]);
       users.length < 6 ? setShowLoadMore(false) : setShowLoadMore(true);
     } catch (error) {
       setError(error.message);
@@ -35,18 +40,43 @@ const TweetsCardsList = () => {
     getUsers();
   }, [page]);
 
+  const getFilteredCards = (filter) => {
+    if (filter === "all") {
+      setFilteredCards([...usersList]);
+      console.log("All card");
+    } else if (filter === "follow") {
+      const filteredFollow = usersList.filter(
+        (user) => user.following === false
+      );
+      setFilteredCards([...filteredFollow]);
+      console.log("follow cards");
+    } else if (filter === "following") {
+      const filteredFollowing = usersList.filter(
+        (user) => user.following === true
+      );
+      setFilteredCards([...filteredFollowing]);
+    }
+  };
+
   const handleLoadMore = () => {
     setPage((prev) => prev + 1);
     scroll.scrollToBottom();
+    getFilteredCards(filter);
+  };
+
+  const handleSumbit = ({ cardsfilter }, actions) => {
+    setFilter(cardsfilter);
+    getFilteredCards(cardsfilter);
   };
 
   return (
     <>
-      <div>
+      <FilterWrapper>
         <BackToHome to={"/"}>Back</BackToHome>
-      </div>
+        <FormFilter onSubmit={handleSumbit}></FormFilter>
+      </FilterWrapper>
       <TweetCardList>
-        {usersList.map((user) => {
+        {filteredCards.map((user) => {
           return (
             <li key={user.id}>
               <TweetCard userInfo={user} />
