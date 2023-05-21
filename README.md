@@ -3,6 +3,8 @@
 This project is made in react engine, having two pages made with react-router.
 First page has information about my finished projects.
 The second page has a list of users who create tweets that you can follow and then follow their new tweets
+Page icludes 6 card and has pagination (button load more)
+After setting status follow/following axios put changes on back-end
 
 ## Getting Started
 
