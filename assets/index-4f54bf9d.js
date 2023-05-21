@@ -1,4 +1,4 @@
-import{n as e,j as s}from"./index-f7af74d9.js";const r=""+new URL("goitlogo-ee9d84e1.png",import.meta.url).href,o=""+new URL("movies-a4aeb14f.jpg",import.meta.url).href,a=""+new URL("nyt-242f343d.jpg",import.meta.url).href,i=""+new URL("shopgamers-ba2109f0.jpg",import.meta.url).href,n=e.img`
+import{n as e,j as s}from"./index-483d8ad9.js";const r=""+new URL("goitlogo-ee9d84e1.png",import.meta.url).href,o=""+new URL("movies-a4aeb14f.jpg",import.meta.url).href,a=""+new URL("nyt-242f343d.jpg",import.meta.url).href,i=""+new URL("shopgamers-ba2109f0.jpg",import.meta.url).href,n=e.img`
   display: block;
   margin: 0 auto;
   width: 900px;
