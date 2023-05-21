@@ -43,13 +43,11 @@ const TweetsCardsList = () => {
   const getFilteredCards = (filter) => {
     if (filter === "all") {
       setFilteredCards([...usersList]);
-      console.log("All card");
     } else if (filter === "follow") {
       const filteredFollow = usersList.filter(
         (user) => user.following === false
       );
       setFilteredCards([...filteredFollow]);
-      console.log("follow cards");
     } else if (filter === "following") {
       const filteredFollowing = usersList.filter(
         (user) => user.following === true
